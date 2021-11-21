@@ -6,11 +6,11 @@ import java.time.Instant;
 public class StandardError implements Serializable {
 	private static final long serialVersionUID = 1L;
 
-	private Instant timestamp; //: "2021-11-21T02:36:21.236+00:00",
-    private Integer status; //": 404,
-    private String error; //: "Not Found",
-    private String message; //"message": "",
-    private String path; //: "/clients/1"
+	private Instant timestamp; 
+    private Integer status; 
+    private String error; 
+    private String message;
+    private String path; 
     
     public StandardError() {
     }
@@ -53,9 +53,5 @@ public class StandardError implements Serializable {
 
 	public void setPath(String path) {
 		this.path = path;
-	}
-
-	public static long getSerialversionuid() {
-		return serialVersionUID;
 	}
 }
